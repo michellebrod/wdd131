@@ -1,11 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 131 – Fundamentos da Web Dinâmica. Página inicial de Michelle Barbosa Rodrigues Amorim, com apresentação pessoal, informações sobre São Paulo e recursos de desenvolvimento web.">
+  <meta name="author" content="Michelle Barbosa Rodrigues Amorim">
+  <title>WDD 131 – Fundamentos da Web Dinâmica - Michelle Barbosa Rodrigues Amorim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/base.css">
+  <script src="scripts/obterdatas.js" defer></script>
 </head>
 <body>
-    <h1> Michelle Amorim</h1>
+  <header>
+    <span id="titulo-curso">WDD131 – Fundamentos da Web Dinâmica</span>
+    <nav class="navigation" aria-label="Navegação principal">
+      <a href="https://www.linkedin.com/in/michelle-barbosa-rodrigues-amorim-a232bb17/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/10?lang=por&id=p6#p6" target="_blank" rel="noopener noreferrer">Escritura</a>
+      <a href="#projeto-final">Projeto Final</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Michelle Barbosa Rodrigues Amorim</h1>
+    <div class="cards">
+      <section class="card sobre-mim" aria-labelledby="titulo-sobre">
+        <h2 id="titulo-sobre">Sobre Mim</h2>
+        <div class="card-body">
+          <div class="introducao">
+            <p>Olá! Meu nome é Michelle Amorim. Sou estudante de desenvolvimento web na BYU–Pathway Worldwide. Gosto de aprender novas tecnologias, enfrentar desafios e passar tempo com minha família. Nesta página, compartilho um pouco sobre mim e alguns recursos úteis para meus estudos.</p>
+            <img src="imagens/perfil.jpeg" alt="Foto de Michelle Amorim" width="180" height="180">
+          </div>
+          <h3>São Bernardo do Campo, São Paulo - Brasil</h3>
+          <div class="localizacao">
+            <figure>
+              <img src="imagens/brasil.svg" alt="Bandeira do Brasil" width="180" height="126">
+              <figcaption>Bandeira do Brasil</figcaption>
+            </figure>
+            <p>Moro na cidade de São Bernardo do Campo, no Estado de São Paulo, Brasil. A região reúne diferentes culturas, gastronomia e oportunidades de estudo e trabalho. O Brasil é conhecido por sua diversidade natural e cultural, amo muito a cultura Brasileira.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card recursos" aria-labelledby="titulo-recursos">
+        <h2 id="titulo-recursos">Recursos Web Dev</h2>
+        <div class="card-body">
+          <ul>
+            <li><a href="https://dev.to/" target="_blank" rel="noopener noreferrer">Comunidade Dev.to</a></li>
+            <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener noreferrer">Smashing Magazine</a></li>
+            <li><a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">CSS-Tricks</a></li>
+            <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Schools</a></li>
+            <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></li>
+            <li><a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer">Udemy</a></li>
+          </ul>
+          <p id="projeto-final" class="projeto-aviso">Projeto Final: em desenvolvimento.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>© <span id="anoAtual"></span> 🌸 Michelle Barbosa Rodrigues Amorim 🌸 São Bernardo do Campo, São Paulo - Brasil</p>
+    <p id="ultimaModificacao"></p>
+  </footer>
 </body>
 </html>
