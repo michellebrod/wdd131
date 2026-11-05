@@ -73,7 +73,7 @@ body {
     background-color: #503B41;
 }
 
-.navegacao {
+nav.navegacao {
     display: flex;
     flex-direction: column;
     width: 100%;
