@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça Paris, França: dados sobre a Cidade Luz, uma vista da Torre Eiffel e um exemplo de clima com cálculo de sensação térmica. Projeto WDD 131 de Michelle Barbosa Rodrigues Amorim.">
+  <meta name="author" content="Michelle Barbosa Rodrigues Amorim">
+  <title>Paris, França | Página do País | WDD 131</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/local.css">
+  <script src="scripts/local.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Paris, França</h1>
+    <p>Um sonho de viagem à Cidade Luz</p>
+  </header>
+
+  <main>
+    <picture class="imagem-principal">
+      <source srcset="imagens/paris-pequena.webp" media="(max-width: 699px)" type="image/webp">
+      <source srcset="imagens/paris-grande.webp" media="(min-width: 700px)" type="image/webp">
+      <img src="imagens/paris-grande.webp" alt="Vista artística da Torre Eiffel e do rio Sena ao pôr do sol em Paris" width="1440" height="720" fetchpriority="high">
+    </picture>
+
+    <section class="painel dados" aria-labelledby="titulo-dados">
+      <h2 id="titulo-dados">Dados</h2>
+      <dl>
+        <div><dt>País:</dt><dd>França</dd></div>
+        <div><dt>Região:</dt><dd>Île-de-France</dd></div>
+        <div><dt>População:</dt><dd>2.047.602 (estimativa 2026)</dd></div>
+        <div><dt>Área:</dt><dd>105,4 km²</dd></div>
+        <div><dt>Idioma:</dt><dd>Francês</dd></div>
+        <div><dt>Moeda:</dt><dd>Euro (EUR)</dd></div>
+        <div><dt>Fuso horário:</dt><dd>UTC+1 / UTC+2 (verão)</dd></div>
+        <div><dt>Prefixo:</dt><dd>+33</dd></div>
+        <div><dt>Domínio:</dt><dd>.fr</dd></div>
+      </dl>
+    </section>
+
+    <section class="painel clima" aria-labelledby="titulo-clima">
+      <h2 id="titulo-clima">Clima</h2>
+      <img class="icone-clima" src="imagens/clima-parcialmente-nublado.svg" alt="Sol entre nuvens" width="80" height="80">
+      <dl>
+        <div><dt>Temperatura:</dt><dd><span id="temperatura">8</span> °C</dd></div>
+        <div><dt>Condições:</dt><dd>Parcialmente nublado</dd></div>
+        <div><dt>Vento:</dt><dd><span id="vento">12</span> km/h</dd></div>
+        <div><dt>Sensação térmica:</dt><dd><span id="sensacao-termica">—</span></dd></div>
+      </dl>
+      <p class="nota-clima">Dados climáticos ilustrativos, não são condições atuais.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="anoAtual"></span> 🌸 Michelle Barbosa Rodrigues Amorim 🌸 São Paulo, Brasil</p>
+    <p id="ultimaModificacao"></p>
+    <p class="credito">Imagem ilustrativa de Paris gerada com IA para esta atividade. Dados populacionais: INSEE.</p>
+  </footer>
+</body>
+</html>
